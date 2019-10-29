@@ -1,9 +1,12 @@
 .task.completed {
-    background-color: #3bc436;
     text-decoration: line-through;
   }
 
   .task{
-     background: blue;
+     text-align: center;
+     font-family: 'Raleway', sans-serif;
+     border-radius: 3px solid rgb(236,248,157);
+
+   
 
   }

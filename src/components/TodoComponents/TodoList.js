@@ -3,7 +3,13 @@ import Task from "./Task";
 import styled from "styled-components";
 
 const TodoDiv = styled.div`
-border: 3px solid;`
+min-height: 30%;
+margin: 2% auto;
+width: 98%;
+border-top: 2px dotted;
+display: flex;
+flex-direction:column;
+`
 
 
 const TodoList = props => {

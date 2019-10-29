@@ -3,7 +3,9 @@ import styled from "styled-components";
 import './Todo.css';
 
 const TodoDiv = styled.div`
-border: 3px solid blue;`
+  border: 3px solid rgb(236,248,157);
+  background: rgb(236,248,157);
+  `
 
 
 const Task = props => {

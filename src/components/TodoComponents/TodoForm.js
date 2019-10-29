@@ -1,4 +1,11 @@
 import React from "react";
+import styled from 'styled-components'
+
+const Form = styled.form`
+margin: 0 auto;
+display: flex;
+flex-direction:column;
+`
 class TodoForm extends React.Component{
     constructor(){
         super();
@@ -15,12 +22,15 @@ class TodoForm extends React.Component{
 
     submitTask = e => {
         e.preventDefault();
-        this.props.addTask(this.state.task);
+        this.props.addTask(this.state.task)
+        this.setState({
+            task: ''
+        })
     };
 
     render(){
         return(
-            <form onSubmit={this.submitTask}>
+            <Form onSubmit={this.submitTask}>
                 <input 
                 type="text"
                 value={this.task}
@@ -29,7 +39,7 @@ class TodoForm extends React.Component{
                 />
 
                 <button>Add Task</button>
-            </form>
+            </Form>
         )
     }
 }
