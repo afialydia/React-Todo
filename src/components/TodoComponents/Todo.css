@@ -1,0 +1,12 @@
+.task.completed {
+    text-decoration: line-through;
+  }
+
+  .task{
+     text-align: center;
+     font-family: 'Raleway', sans-serif;
+     border-radius: 3px solid rgb(236,248,157);
+
+   
+
+  }
